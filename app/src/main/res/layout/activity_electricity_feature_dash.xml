@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard.Electricity.ElectricityFeatureDash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/slider_electric1"
+            app:placeholder="@drawable/loading"
+            app:error_image="@drawable/error"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            app:auto_cycle="true"
+            app:period="1000"
+            app:delay="0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Electric_dpt_office_BTN"
+                android:layout_width="311dp"
+                android:layout_height="54dp"
+                android:background="@drawable/rounded_btn"
+                android:text="Electricity Department Office"/>
+
+            <Button
+                android:id="@+id/Electric_line_man_BTN"
+                android:layout_width="311dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:background="@drawable/rounded_btn"
+                android:text="Line Man Contact" />
+
+            <Button
+                android:id="@+id/Electric_complaint_BTN"
+                android:layout_width="311dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:background="@drawable/rounded_btn"
+                android:text="ELECTRICITY Complaint" />
+
+        </LinearLayout>
+
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/slider_electric2"
+            android:layout_width="match_parent"
+            app:placeholder="@drawable/loading"
+            app:error_image="@drawable/error"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_margin="@dimen/_4sdp"
+            app:auto_cycle="true"
+            app:delay="0"
+            app:period="2000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Electric_dpt_checkbill_BTN"
+                android:layout_width="154dp"
+                android:layout_height="61dp"
+                android:background="@drawable/rounded_btn"
+                android:text="CHECK BILL">
+            </Button>
+
+            <Space
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="match_parent">
+            </Space>
+
+            <Button
+                android:layout_width="154dp"
+                android:layout_height="61dp"
+                android:background="@drawable/rounded_btn"
+                android:text="HELP LINE">
+            </Button>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_19sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Electric_dpt_paybill_BTN"
+                android:layout_width="154dp"
+                android:layout_height="61dp"
+                android:background="@drawable/rounded_btn"
+                android:text="PAY BILL">
+            </Button>
+
+            <Space
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="match_parent">
+            </Space>
+
+            <Button
+                android:layout_width="154dp"
+                android:layout_height="61dp"
+                android:background="@drawable/rounded_btn"
+                android:text="MORE SERVICES">
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

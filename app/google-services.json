@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "575510824208",
+    "firebase_url": "https://the-gao-1-default-rtdb.firebaseio.com",
+    "project_id": "the-gao-1",
+    "storage_bucket": "the-gao-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575510824208:android:ff3be00714097ddaa21195",
+        "android_client_info": {
+          "package_name": "com.prashant.thegao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575510824208-qqv894lm4t30rqftlslg3r3osavgvrgh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_yfji8XaNnSyugoYjNIP7UG-J5u_Qr78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575510824208-qqv894lm4t30rqftlslg3r3osavgvrgh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

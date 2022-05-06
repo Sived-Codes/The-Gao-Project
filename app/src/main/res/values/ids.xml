@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="number2" type="id" />
+    <item name="EDemail" type="id" />
+    <item name="progressBar" type="id" />
+    <item name="cp2" type="id" />
+    <item name="EDnewpwdc" type="id" />
+    <item name="EDloginBtn" type="id" />
+    <item name="EDregisterbtn1" type="id" />
+</resources>

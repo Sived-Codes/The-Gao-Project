@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prashant.thegao">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="The Gao"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TheGao1"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Dashboard.Electricity.ElectricityCheckBill"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Electricity.ElectricityFeatureDash" />
+        <activity
+            android:name=".Dashboard.Electricity.ElectricityPayBill"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Electricity.ElectricityFeatureDash" />
+        <activity
+            android:name=".Dashboard.Electricity.ElectricityDepartment"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Electricity.ElectricityFeatureDash" />
+        <activity
+            android:name=".Dashboard.Panchayat.PanchayatConstructionWork"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Panchayat.PanchayatSubDashboard.PanchayatFeatureDash" />
+        <activity
+            android:name=".Dashboard.Panchayat.PanchayatLenDen"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Panchayat.PanchayatSubDashboard.PanchayatFeatureDash" />
+        <activity
+            android:name=".Dashboard.Panchayat.PanchayatRoadWork"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Panchayat.PanchayatSubDashboard.PanchayatFeatureDash" />
+        <activity
+            android:name=".Dashboard.Education.School.OfflineHindiSchool"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Education.School.OfflineSchool" />
+        <activity
+            android:name=".Dashboard.Education.School.OfflineSchool"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Education.School.SchoolDashboard" />
+        <activity
+            android:name=".Dashboard.Education.School.SchoolDashboard"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Education.EducationFeatureDash" />
+        <activity
+            android:name=".Dashboard.Education.EducationFeatureDash"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Dashboard" />
+        <activity
+            android:name=".Dashboard.Electricity.ElectricityComplaint"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Electricity.ElectricityFeatureDash" />
+        <activity
+            android:name=".Dashboard.Dashboard"
+            android:exported="true"
+            android:label="Dashboard" />
+        <activity
+            android:name=".Dashboard.Panchayat.PanchayatSubDashboard.PanchayatFeatureDash"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Dashboard" />
+        <activity
+            android:name=".Dashboard.Panchayat.SaarpanchQuerySend"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Panchayat.PanchayatSubDashboard.PanchayatFeatureDash" />
+        <activity
+            android:name=".Dashboard.Panchayat.SachivQuerySend"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Panchayat.PanchayatSubDashboard.PanchayatFeatureDash" />
+        <activity
+            android:name=".Dashboard.Panchayat.SahayojakQuerySend"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Panchayat.PanchayatSubDashboard.PanchayatFeatureDash" />
+        <activity
+            android:name=".Dashboard.Electricity.ElectricityFeatureDash"
+            android:exported="false"
+            android:parentActivityName=".Dashboard.Dashboard" />
+        <activity
+            android:name=".AssocUser.SahyojakWork.SahayojakUpdateNotice"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SahyojakWork.SahayojakQueryReceive"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SahyojakWork.SahayojakDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SahyojakWork.SahayojakSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SahyojakWork.SahayojakLogin"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SachivWork.SachivQueryReceive"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SachivWork.SachivUpdateNotice"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SachivWork.SachivDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SachivWork.SachivSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SachivWork.SachivLogin"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SarpanchWork.SarpanchQueryRecevie"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SarpanchWork.SarpanchSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SarpanchWork.SarpanchLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard.UploadProfilePic"
+            android:exported="true" />
+        <activity
+            android:name=".AssocUser.SarpanchWork.SarpanchUpdateNotice"
+            android:exported="false" />
+        <activity
+            android:name=".AssocUser.SarpanchWork.SarpanchDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".AssocUser.UserTypes"
+            android:exported="false" />
+        <activity
+            android:name=".PublicUser.ForgotPublicPassword"
+            android:exported="false" />
+        <activity
+            android:name=".PublicUser.PublicSignupPage"
+            android:exported="true"
+            android:label="Public SignUp" />
+        <activity
+            android:name=".PublicUser.PublicLoginPage"
+            android:exported="false"
+            android:label="Public Login" />
+        <activity
+            android:name=".SelectUser"
+            android:exported="false"
+            android:label="Select User" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

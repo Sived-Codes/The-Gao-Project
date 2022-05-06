@@ -1,0 +1,12 @@
+<scale xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scale_down"
+    tools:ignore="ExtraText">
+    android:duration="200"
+    android:fromXScale="1.2"
+    android:fromYScale="1.2"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toXScale="1"
+    android:toYScale="1" />
+</scale>

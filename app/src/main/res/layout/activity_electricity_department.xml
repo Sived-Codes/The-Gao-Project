@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard.Electricity.ElectricityDepartment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/electricityheadofficeSlider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_margin="@dimen/_4sdp"
+            app:placeholder="@drawable/loading"
+            app:error_image="@drawable/error"
+            app:auto_cycle="true"
+            app:delay="0"
+            app:period="2000" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/sarpanch_query_btn"
+            android:layout_width="340dp"
+            android:layout_height="280dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Help Line Number"
+                            android:textSize="@dimen/_18sdp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:text="Toll Free : 1800-233-1266"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:textSize="@dimen/_15sdp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:text="Mail : MPEastDiscom@mpez.co.in"
+                            android:textSize="@dimen/_15sdp">
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:text="Phone : 07162-222876"
+                            android:textSize="@dimen/_15sdp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:text="Address : VIP Road, Khajri Chouk, beside CF Office, Chhindwara"
+                            android:textSize="@dimen/_15sdp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_7sdp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/ele_dept_callBtn"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_11sdp"
+                                android:text="Call">
+                            </Button>
+
+                            <Button
+                                android:id="@+id/ele_dept_mailBtn"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_11sdp"
+                                android:text="Mail">
+                            </Button>
+
+
+                            <Button
+                                android:id="@+id/ele_dept_locationBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_11sdp"
+                                android:text="Location">
+                            </Button>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eleclogo2">
+
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard.Panchayat.SachivQuerySend">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/positionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:background="@color/purple_700"
+                android:gravity="center"
+                android:text="★ POSITION : SARPANCH ★"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_19sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/sarpanchPic"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_below="@id/positionName"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sarpnachpic">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/sarpanchNameTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/positionName"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/sarpanchPic"
+                android:text="Name : JIRA SINDRAM"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/sarpanchPhoneTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sarpanchNameTxtView"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/sarpanchPic"
+                android:text="Phone : 7509871613"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/SarpanchCallBtnView"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sarpanchPhoneTxtView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/sarpanchPic"
+                android:backgroundTint="#FF0000"
+                android:text="Call"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/SarpanchWhatsappBtnView"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sarpanchPhoneTxtView"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/SarpanchCallBtnView"
+                android:backgroundTint="#008000"
+                android:text="WhatsApp"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:id="@+id/linirlyout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SarpanchCallBtnView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginRight="@dimen/_4sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:text="Please Written below, This Msg Will send to SARPANCH !!!!">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvConversation_sarpanch"
+                android:layout_width="wrap_content"
+                android:layout_height="290dp"
+                android:layout_below="@id/linirlyout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="11dp"
+                android:background="@drawable/edittext_bg"
+                tools:ignore="NotSibling" />
+
+            <LinearLayout
+                android:id="@+id/typelinirlyout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lvConversation_sarpanch"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_marginEnd="1dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sendmsg_text_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:hint="Type Your Query..">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etMessage_sarpanch"
+                        android:layout_width="@dimen/_284sdp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edittext_bg"
+                        android:inputType="text">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSendMsg_sarpanch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/typelinirlyout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Send">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
